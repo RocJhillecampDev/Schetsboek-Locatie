@@ -8,7 +8,6 @@ Textfield tekstveld1;
 String[] boodschappen = new String[20];
 int teller = -1;
 int locatie = 5;
-boolean A;
 void setup(){
     size(330,500);
     background(173,216,230);
@@ -32,27 +31,16 @@ void setup(){
 }
 
 void draw(){
-    boolean A = true;
-
-
-
 
 }
 
 void Knop1(){
-   A = true;
-  if(A == true){ 
-    teller++;
+    
+  teller++;
+  
 fill(0);
 
     boodschappen[teller] = tekstveld1.getText();
-
-  }
-  
-    for(int i = 0; i < 1; i++){
       locatie++;
-     text(boodschappen[teller],40,20*locatie);
-  fill(0);
-
-    }
+       text(boodschappen[teller],40,20*locatie);
 }
